@@ -1,0 +1,10 @@
+.idea/
+**/target/
+**/node_modules/
+**/dist/
+**/coverage/
+*.log
+
+.angular/
+node_modules/
+target/

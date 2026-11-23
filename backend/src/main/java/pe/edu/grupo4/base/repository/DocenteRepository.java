@@ -1,0 +1,1 @@
+package pe.edu.grupo4.base.repository; import pe.edu.grupo4.base.entity.Docente; import org.springframework.data.jpa.repository.JpaRepository; public interface DocenteRepository extends JpaRepository<Docente,Long> {}

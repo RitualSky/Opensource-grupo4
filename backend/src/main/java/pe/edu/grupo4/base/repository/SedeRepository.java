@@ -1,0 +1,1 @@
+package pe.edu.grupo4.base.repository; import pe.edu.grupo4.base.entity.Sede; import org.springframework.data.jpa.repository.JpaRepository; public interface SedeRepository extends JpaRepository<Sede,Long> {}

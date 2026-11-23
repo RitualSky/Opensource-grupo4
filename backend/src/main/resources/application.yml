@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: ${DB_URL:jdbc:h2:mem:carga_academica;MODE=PostgreSQL;DB_CLOSE_DELAY=-1}
+    username: ${DB_USERNAME:sa}
+    password: ${DB_PASSWORD:}
+  jpa:
+    hibernate.ddl-auto: none
+    defer-datasource-initialization: true
+    open-in-view: false
+  sql.init.mode: always
+  h2.console.enabled: true
+server.error.include-message: never
+app.carga.maximo-horas-semanales: 20
+app.carga.minutos-traslado: 60
+---
+spring:
+  config.activate.on-profile: postgres
+  datasource.url: ${DB_URL:jdbc:postgresql://localhost:5432/carga_academica}
+  datasource.username: ${DB_USERNAME:postgres}
+  datasource.password: ${DB_PASSWORD:postgres}
+  jpa.hibernate.ddl-auto: none
+  sql.init.mode: never
